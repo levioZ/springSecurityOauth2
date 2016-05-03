@@ -25,14 +25,14 @@ public class MyUserDetailService implements UserDetailsService
     	SimpleGrantedAuthority role_admin = new SimpleGrantedAuthority("ROLE_ADMIN");
     	SimpleGrantedAuthority role_user = new SimpleGrantedAuthority("ROLE_USER");
     	
-    	if(StringUtils.equals(userName, "lcy"))
+    	if(StringUtils.equals(userName, "eli"))
     	{
     		auths = new ArrayList<GrantedAuthority>();
     		auths.add(role_admin);
     		auths.add(role_user);    		
     	}
     	
-    	User user = new User(userName, "lcy", true, true, true, true, auths);
+    	User user = new User(userName, "123", true, true, true, true, auths);
 		return user;
     	
 	}
