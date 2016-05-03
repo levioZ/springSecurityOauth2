@@ -34,10 +34,10 @@ public class MyInvocationSecurityMetadataSource implements FilterInvocationSecur
 		ConfigAttribute ca = new SecurityConfig("ROLE_USER");
 		atts.add(ca); 
 		resourceMap.put("/index.jsp", atts);  
-		Collection<ConfigAttribute> attsno =new ArrayList<ConfigAttribute>();
-		ConfigAttribute cano = new SecurityConfig("ROLE_NO");
-		attsno.add(cano);
-		resourceMap.put("/other.jsp", attsno);    
+//		Collection<ConfigAttribute> attsno =new ArrayList<ConfigAttribute>();
+//		ConfigAttribute cano = new SecurityConfig("ROLE_NO");
+//		attsno.add(cano);
+//		resourceMap.put("/other.jsp", attsno);    
 		
 	}
     
