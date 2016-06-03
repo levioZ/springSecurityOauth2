@@ -18,7 +18,7 @@
 	2. 用户希望授权"网站"能获取用户存在appDemo中的Resource，链接为http://localhost:8080/appDemo/resource/getUserInfo
 	        同时，又不想把自己在appDemo的用户名、密码告诉"网站"
 	3. "网站"正好提供了一个超链接，名字叫"Login using appDemo"，链接为：
-	   http://localhost:8080/appDemo/oauth/authorize?client_id=m1&redirect_uri=http%3a%2f%2flocalhost%3a8080%2f&response_type=code&scope=read
+	   http://localhost:8080/appDemo/oauth/authorize?client_id=m1&redirect_uri=http%3a%2f%2flocalhost%3a8080%2fappDemo&response_type=code&scope=read
 	4. appDemo发现注册名为"m1"的client正在申请授权(这个申请实际上是由用户发起的)，但是并没有用户的登录信息
 	5. appDemo先跳转到登录界面让用户登录
 	6. 用户登录成功，appDemo询问用户：m1要XXXX你的resource，你，愿意吗？(这一步显示的是oauth_approval.jsp)

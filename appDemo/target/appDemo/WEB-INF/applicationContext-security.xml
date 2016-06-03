@@ -44,7 +44,8 @@
 			default-target-url="/index.jsp" />
 		<anonymous />
 	</http>
-
+    
+    <!-- 这里设置用户名，密码以及角色 -->
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider>
 			<user-service id="userService">
